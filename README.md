@@ -55,6 +55,12 @@ Ikuti langkah-langkah di bawah ini untuk menjalankan proyek di mesin lokal Anda:
     ```bash
     docker-compose exec app php artisan migrate
     ```
+7. **Gunakan Git Bash**
+    ```bash
+    docker exec -i laravel-db mysql -uroot -pverysecret laravel_db < ./sql/axon_data.sql
+
+    docker exec -i laravel-db mysql -uroot -pverysecret laravel_db < ./sql/axon_logic.sql
+    ```
 
 ## Akses Aplikasi dan Database
 
